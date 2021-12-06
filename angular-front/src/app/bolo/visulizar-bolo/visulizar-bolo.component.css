@@ -1,0 +1,30 @@
+.container {
+    width: 800px;
+    margin-top: 15px;
+}
+
+button {
+    background: #FBF4F4;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 38%;
+    margin-top: 3%;
+   
+    color: #3D1305;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+}
+
+h1, label, p {
+    color: white;
+}
+
+input {
+    margin-bottom: 15px;
+}
+
+#total {
+    margin-top: 15px;
+    display: inline-block;
+}

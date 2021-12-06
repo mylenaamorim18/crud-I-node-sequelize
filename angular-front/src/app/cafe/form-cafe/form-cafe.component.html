@@ -1,0 +1,31 @@
+<app-menu></app-menu>
+<div class="container">
+  <h1 class="text-center">NOVO CAFÉ <span><img src="../../../assets/imagens/1046836.png" width="45px"></span></h1>
+  <form (ngSubmit)="cadastrarCafe()" #form="ngForm">
+    <div class="form-group">
+      <label for="nome">Nome</label>
+      <input type="text" class="form-control" required [(ngModel)]="cafe.nome" name="nome">
+    </div>
+    <div class="form-group">
+      <label for="preco">Preço</label>
+      <input type="number" class="form-control" name="preco" [(ngModel)]="cafe.preco">
+    </div>
+    <div class="form-group">
+      <label for="quantidade">Quantidade</label>
+      <input type="number" class="form-control" name="quantidade" [(ngModel)]="cafe.quantidade">
+    </div>
+    <div>
+      <label for="categoria">Categoria</label>
+      <select class="form-control" name="categoria_id" [(ngModel)]="cafe.categoria_id">
+        <option *ngFor="let categoria of categorias" value="{{categoria.id}}">{{categoria.nome}}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="descricao">Descrição</label>
+      <textarea class="form-control" name="descricao" [(ngModel)]="cafe.descricao" rows="3"></textarea>
+    </div>
+    <div class="d-flex justify-content-center">
+      <button type="submit" class="btn text-center">Cadastrar</button>
+    </div>
+  </form>
+</div>

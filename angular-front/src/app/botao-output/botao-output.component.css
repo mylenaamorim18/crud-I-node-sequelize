@@ -1,0 +1,9 @@
+.botao {
+    display: inline-block;
+    margin-left: 400px;
+    margin-top: 15px;
+}
+
+.decrementar, .incrementar {
+    background-color: #CE6424;
+}
